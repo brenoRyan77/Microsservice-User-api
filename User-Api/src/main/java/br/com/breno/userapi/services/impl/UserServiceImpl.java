@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findById(Long id) {
 
-        log.info("PAYROLL_SERVICE ::: Get request on "
+        log.info("USER_SERVICE ::: Get request on "
                 + envi.getProperty("local.server.port") + " port" );
 
         return repository.findById(id).orElseThrow(() ->
